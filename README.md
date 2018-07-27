@@ -7,8 +7,8 @@ On this [example board](https://trello.com/b/rpnspWv1/hiring), there are three c
 </p>
 
 - Interview phase: Ignored by the script, cards needs to be moved manually to the second column
-- **To send-email**: The column used to run the script
-- Done: The column which the script sends the cards that were processed (to avoid e-mails to be sent twice)
+- **To send-email**: The column used to run the script, defined by env var `DEFAULT_PENDING_LIST_TITLE`
+- Done: The column which the script sends the cards that were processed (to avoid e-mails to be sent twice), defined by env var `DEFAULT_DONE_LIST_TITLE`
 
 The assistant basically:
 1. Checks what's the value of `DEFAULT_PENDING_LIST_TITLE` env var, in our case it's *To send e-mail*
@@ -47,3 +47,7 @@ DEFAULT_DONE_LIST_TITLE='Done'
 4. Run ngrok (remember to point it to the Django server port, which is `8000` by default) and copy its url
 5. Set the ngrok URL provided to you as the Webhook URL
 6. Click on **Create action**
+
+## TODO
+- [ ] Tests
+- [ ] Disapproved flow
