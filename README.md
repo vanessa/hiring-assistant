@@ -42,7 +42,7 @@ DEFAULT_DONE_LIST_TITLE='Done'
 4. Run with `python manage.py runserver`
 
 ## Creating the IFTTT applet
-It's not really useful right now because of the app isn't configured to be deployed yet. You can use ngrok to test the request. However, you can use ngrok to simulate the request.
+It's not really useful right now because of the app isn't configured to be deployed yet. However, you can use ngrok to simulate the request.
 
 1. Go to [New Applet](https://ifttt.com/create)
 2. As the **trigger (this)**, select *Button widget* or anything you want
