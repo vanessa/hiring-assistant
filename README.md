@@ -2,9 +2,9 @@
 A simple Django project to send automatic e-mails whenever its index URL is called.
 
 On this [example board](https://trello.com/b/rpnspWv1/hiring), there are three columns:
-<p style="text-align: center;">
+<div style="text-align: center;">
     <img src="https://i.imgur.com/fdVqFhr.png" width="600">
-</p>
+</div>
 
 - Interview phase: Ignored by the script, cards needs to be moved manually to the second column
 - **To send-email**: The column used to run the script, defined by env var `DEFAULT_PENDING_LIST_TITLE`
@@ -16,9 +16,10 @@ The assistant basically:
 3. When it finds the correct column, reads all the cards and checks what have the Approved/Not approved label
 4. Parses the e-mail from the card description
 5. Sends the approval/disapproval e-mail (below) and finally...
-<p style="text-align:center;">
-<img src="https://i.imgur.com/2b7nYBW.png">
-</p>
+
+<div style="text-align:center;">
+    <img src="https://i.imgur.com/2b7nYBW.png">
+</div>
 
 7. ...moves the card to `DEFAULT_DONE_LIST_TITLE` env var column, in our case it's *Done*
 
@@ -26,7 +27,7 @@ The assistant basically:
 1. Clone the project and set up a virtual environment
 2. Install dependencies with `pip install -r requirements.txt`
 3. Create a `.env` file with the following required variables:
-```env
+```bash
 # SendGrid settings
 SENDGRID_USERNAME='sendgrid_username'
 SENDGRID_PASSWORD='sendgrid_password'
