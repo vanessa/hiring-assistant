@@ -1,0 +1,6 @@
+{% block subject %}Approval for {{ name }}{% endblock %}
+{% block html %}
+    <p>
+        Congratulations, <b>{{ name }}</b>!
+    </p>
+{% endblock %}

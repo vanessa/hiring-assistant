@@ -1,0 +1,9 @@
+# General
+.env
+__pycache__/
+venv/
+db.sqlite3
+local.py
+
+# VSCode
+.vscode
