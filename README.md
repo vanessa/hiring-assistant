@@ -2,6 +2,7 @@
 A simple Django project to send automatic e-mails whenever its index URL is called.
 
 On this [example board](https://trello.com/b/rpnspWv1/hiring), there are three columns:
+
 <div style="text-align: center;">
     <img src="https://i.imgur.com/fdVqFhr.png" width="600">
 </div>
